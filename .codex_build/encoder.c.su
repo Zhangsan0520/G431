@@ -1,0 +1,11 @@
+HardWare\encoder.c:34:16:Encoder_IsValidMotor	16	static
+HardWare\encoder.c:39:17:Encoder_ReadCounter	16	static
+HardWare\encoder.c:44:19:Encoder_Init	16	static
+HardWare\encoder.c:77:6:Encoder_Reset	24	static
+HardWare\encoder.c:93:6:Encoder_ResetAll	16	static
+HardWare\encoder.c:101:9:Encoder_Update	32	static
+HardWare\encoder.c:128:6:Encoder_UpdateAll	16	static
+HardWare\encoder.c:136:9:Encoder_GetDelta	16	static
+HardWare\encoder.c:146:9:Encoder_GetPosition	16	static
+HardWare\encoder.c:156:10:Encoder_GetRawCount	16	static
+HardWare\encoder.c:166:6:Encoder_SetDirectionInverted	16	static

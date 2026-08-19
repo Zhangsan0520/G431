@@ -1,0 +1,9 @@
+HardWare\serial.c:9:19:Serial_SendBytes	16	static
+HardWare\serial.c:19:19:Serial_SendString	16	static
+HardWare\serial.c:29:19:Serial_Printf	400	static
+HardWare\serial.c:57:19:Vofa_Send3	24	static
+HardWare\serial.c:65:19:Vofa_Send2Motor	40	static
+HardWare\serial.c:81:19:Vofa_Send4Motor	96	static
+HardWare\serial.c:97:19:SerialPlot_Send3	24	static
+HardWare\serial.c:102:19:SerialPlot_Send2Motor	32	static
+HardWare\serial.c:112:19:SerialPlot_Send4Motor	24	static

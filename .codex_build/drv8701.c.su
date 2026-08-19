@@ -1,0 +1,15 @@
+HardWare\drv8701.c:58:16:DRV8701_IsValidMotor	16	static
+HardWare\drv8701.c:63:16:DRV8701_ClampDuty	16	static
+HardWare\drv8701.c:78:17:DRV8701_AbsDuty	16	static
+HardWare\drv8701.c:83:17:DRV8701_DutyToCompare	24	static
+HardWare\drv8701.c:90:13:DRV8701_WritePwm	24	static
+HardWare\drv8701.c:97:19:DRV8701_Init	16	static
+HardWare\drv8701.c:131:6:DRV8701_Enable	16	static
+HardWare\drv8701.c:143:6:DRV8701_Disable	16	static
+HardWare\drv8701.c:156:6:DRV8701_EnableAll	16	static
+HardWare\drv8701.c:164:6:DRV8701_DisableAll	16	static
+HardWare\drv8701.c:172:6:DRV8701_SetDuty	24	static
+HardWare\drv8701.c:197:6:DRV8701_Stop	16	static
+HardWare\drv8701.c:208:6:DRV8701_StopAll	16	static
+HardWare\drv8701.c:216:6:DRV8701_SetDirectionInverted	16	static
+HardWare\drv8701.c:226:9:DRV8701_GetDuty	16	static
