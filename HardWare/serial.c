@@ -4,13 +4,14 @@
 #include <stdio.h>
 #include <string.h>
 
+#include "stm32g4xx_hal_def.h"
 #include "usart.h"
 
 HAL_StatusTypeDef Serial_SendBytes(const uint8_t *data, uint16_t length)
 {
     if ((data == NULL) || (length == 0U))
     {
-        return HAL_OK;
+        return HAL_ERROR;
     }
 
     return HAL_UART_Transmit(&huart2, (uint8_t *)data, length, SERIAL_TX_TIMEOUT_MS);
@@ -20,7 +21,7 @@ HAL_StatusTypeDef Serial_SendString(const char *str)
 {
     if (str == NULL)
     {
-        return HAL_OK;
+        return HAL_ERROR;
     }
 
     return Serial_SendBytes((const uint8_t *)str, (uint16_t)strlen(str));
@@ -34,7 +35,7 @@ HAL_StatusTypeDef Serial_Printf(const char *format, ...)
 
     if (format == NULL)
     {
-        return HAL_OK;
+        return HAL_ERROR;
     }
 
     va_start(args, format);
@@ -43,7 +44,7 @@ HAL_StatusTypeDef Serial_Printf(const char *format, ...)
 
     if (length <= 0)
     {
-        return HAL_OK;
+        return HAL_ERROR;
     }
 
     if (length >= (int)sizeof(buffer))
@@ -84,7 +85,7 @@ HAL_StatusTypeDef Vofa_Send4Motor(const int32_t target[4],
 {
     if ((target == NULL) || (actual == NULL) || (duty == NULL))
     {
-        return HAL_OK;
+        return HAL_ERROR;
     }
 
     return Serial_Printf("d:%ld,%ld,%ld,%ld,%ld,%ld,%ld,%ld,%ld,%ld,%ld,%ld\r\n",

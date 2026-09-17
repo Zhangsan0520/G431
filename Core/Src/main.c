@@ -38,13 +38,13 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define MOTOR_MAX_SPEED_COUNTS 2930
+#define MOTOR_MAX_SPEED_COUNTS 101
 #define MOTOR_TARGET_SPEED_PERCENT 50
 #define MOTOR_TARGET_SPEED_COUNTS ((MOTOR_MAX_SPEED_COUNTS * MOTOR_TARGET_SPEED_PERCENT) / 100)
 #define MOTOR_PID_KP 0.2f
 #define MOTOR_PID_KI 0.3f
 #define MOTOR_PID_KD 0.0f
-#define MOTOR_DUTY_LIMIT ((DRV8701_DUTY_MAX * 20) / 100)
+#define MOTOR_DUTY_LIMIT ((DRV8701_DUTY_MAX * 100) / 100)
 
 /* USER CODE END PD */
 
